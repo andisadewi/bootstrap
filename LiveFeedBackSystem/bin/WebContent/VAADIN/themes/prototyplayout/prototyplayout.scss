@@ -1,0 +1,38 @@
+/* Import the reindeer theme.*/
+/* This only allows us to use the mixins defined in it and does not add any styles by itself. */
+@import "../reindeer/reindeer.scss";
+
+/* This contains all of your theme.*/
+/* If somebody wants to extend the theme she will include this mixin. */
+@mixin prototyplayout {
+
+  /* Include all the styles from the reindeer theme */
+  @include reindeer;
+  .v-label-title{color:white;
+  font-size:24px;}
+  
+  .v-label-smallwhite{color:white;}
+  
+  .backcolor{background:#c50e1f;}
+  
+  .v-table-veranstaltungen .v-table-cell-content{
+  height: 54px;
+  font-style: monoblock;
+  font-size: 16px;
+  border: 1px solid black;
+  text-align: center;
+  vertical-align: middle;
+  }
+  
+  .v-table-veranstaltungen .v-table-row-spacer{
+   color: black;
+  }
+  
+  .v-table-veranstaltungen .v-table-header-wrap{
+  background:#DDE1E5;
+  border: 1px solid black;
+  }
+  
+ 
+  /* Insert your theme rules here */
+}

@@ -1,0 +1,58 @@
+Methoden die das Frontend braucht:
+
+
+
+Veranstaltung:
+	Auslesen alle Veranstaltungen  (ID oder aehnliches um einzelnde Infos zu getten) -- select in Lecture.java
+	Auslesen Informationen  von Veranstaltung -- selectLecture in Lecture.java
+	Setzen Informationen	von Veranstaltung -- update in Lecture.java
+	Erstellen Veranstaltung -- insert in Lecture.java
+	Loeschen Veranstaltung -- delete in Lecture.java											
+	
+Buttons:
+	Auslesen Speed 
+	+1Setzen Speed
+	-1Setzen Speed
+	Resetten Speed
+	Auslesen Laut
+	+1Setzen Laut
+	Resetten Laut	
+	
+Fragen :
+	Auslesen alle Fragen (ID oder aehnliches um einzelnde Infos zu getten) -- select in Question.java
+	Auslesen Information von Frage -- selectQuestion in Question.java
+	Erstellen Frage -- insert in Question.java
+	+1Setzen vote 
+	Setzen beantwortet  -- updateAnswered in Question.java 
+	Auslesen beantwortet -- selectAnswered in Question.java
+	
+Umfrage : 
+	Auslesen alle Umfragen in database -- selectAllSurveys -- in Survey.java
+	Auslesen alle Umfragen in einer VL -- selectSurveysFromLecture -- in Survey.java
+	Auslesen Information von Umfrage (aber nicht die choices) -- selectSurvey -- in Survey.java
+	Auslesen von Choices einer Umfrage -- selectResponsesText -- in Response.java
+	Auslesen Timer von Umfragen -- readTimer -- in Survey.java (result in milliseconds)
+	Auslesen von Beantwortung von Umfrage -- selectStudentResponse -- in studentResponse.java
+	
+	Choices updaten (der text or die boolean wert) - update -- in Response.java
+	Setzen Information von Umfrage -- updateSurvey -- in Survey.java
+	Loeschen Umfrage! -- deleteSurvey -- in Survey.java
+	Beantworten Umfrage -- insert -- in StudentResponse.java
+	
+	Zaehlen wie viele Studenten welche Choice in einer Umfrage beantworten -- surveyChoiceCounter -- in studentResponse.java
+	Zaehlen wie viele Studenten die Umfrage beantworten -- surveyCounter -- in studentResponse.java
+
+
+Rechte/Rollen : 
+	Auslesen aller Rollen	 (ID oder aehnliches um einzelnde Infos zu getten) -- select in Roles.java
+	Auslesen Rechte von Rolle -- selectRights in Rights.java
+	Setzen Rechte -- update in Right.java 
+	Erstellen Rolle  -- insert in Roles.java
+	Loeschen von Rolle -- delete in Roles.java
+	
+Benutzer:
+	Loeschen von Nutzer -- delete in User.java
+	Auslesen Rolle von Nutzer --selectRolle in User.java
+	Setzen von Rolle von Nutzer -- updateRolle in User.java
+	
+	
