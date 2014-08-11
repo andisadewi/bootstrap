@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<Resource name="jdbc/PollDatasource" auth="Container"
-	type="javax.sql.DataSource" driverClassName="com.YourDriver"
-	url="jdbc:derby://localhost:1527/nameOfTheDatabase;create=true"
-	username="username" password="password" maxActive="20" maxIdle="10"
-	maxWait="-1" />
